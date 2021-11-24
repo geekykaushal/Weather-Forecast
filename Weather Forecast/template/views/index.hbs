@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>weather</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/csss/about.css">
+
+
+</head>
+
+<body>
+    <div class="container mt-4" id="box">
+        {{>header}}
+        <div class="form-group mt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-md-12 col-lg-12 col-sm-12">
+                        <div class="form-group">
+
+                            <input type="text" class="form-control " name="" id="search" aria-describedby="helpId"
+                                placeholder="Enter Location">
+                            <button class="btn btn-primary mt-4" id="submit" type="submit">search</button>
+                        </div>
+                    </div>
+                </div>
+                <p id="demo1"></p>
+                <p id="demo"></p>
+            </div>
+
+        </div>
+        <div class="converter">
+            <p style="font-size: 20px; color: rgb(22, 154, 241);">Convert Farnehite into Celcius</p>
+             <div class="form-group ml-2">
+              
+               <input type="text" class="form-control"  id="farn" aria-describedby="helpId" placeholder="Enter Temperature in Farnehite">
+               
+             </div>
+            <button type="button" class="btn btn-success ml-2" id="convert_btn">convert</button>
+            <p id="demo3" style="margin-top: 10px; color: green;"></p>
+        </div>
+        {{>footer}}
+    </div>
+
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
